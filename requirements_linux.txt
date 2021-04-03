@@ -1,0 +1,5 @@
+python3-tk
+python3-dev
+espeak
+libespeak1
+portaudio19-dev

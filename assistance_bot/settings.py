@@ -1,0 +1,3 @@
+ASSISTANT_NAME = 'Ahsoka'
+LANGUAGE = 'ru'
+DEBUG = True
