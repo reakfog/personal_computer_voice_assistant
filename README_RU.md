@@ -33,7 +33,7 @@ Python3, PyAudio
 
 После установки вам все равно может потребоваться запуск pip install pyaudio, особенно если вы работаете в виртуальной среде.
 
-#### <a name='pyaudio_installation_macos'>с</a>
+#### <a name='pyaudio_installation_macos'>macOS</a>
 Для macOS сначала необходимо установить PortAudio с Homebrew, а затем установить PyAudio с помощью pip:
 
 `brew install portaudio`
