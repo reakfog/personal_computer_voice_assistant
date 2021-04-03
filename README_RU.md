@@ -1,6 +1,6 @@
 # Ahsoka Voice Assistant
 
-## Установка PyAudio
+## **Установка PyAudio**
 Процесс установки PyAudio будет зависеть от вашей операционной системы.
 
 **-----Debian Linux-----**
