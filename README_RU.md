@@ -45,6 +45,7 @@ Python3, PyAudio
 
 #### <a name='python_packages_installation'>Установка python зависимостей</a>
 Установите необходимые библиотеки:
+
 `pip install -r requirements.txt`
 
 ## <a name='lounch'>Запуск проекта локально</a>
