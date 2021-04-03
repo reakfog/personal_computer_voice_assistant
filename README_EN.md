@@ -3,31 +3,31 @@
 ## Installing PyAudio
 The process for installing PyAudio will vary depending on your operating system.
 
-1. **Debian Linux**
+**Debian Linux**
 
 If you’re on Debian-based Linux (like Ubuntu) you can install PyAudio with apt:
    
-`$ sudo apt-get install python-pyaudio python3-pyaudio`
+`sudo apt-get install python-pyaudio python3-pyaudio`
    
 Once installed, you may still need to run pip install pyaudio, especially if you are working in a virtual environment.
 
-2. **macOS**
+**macOS**
 
 For macOS, first you will need to install PortAudio with Homebrew, and then install PyAudio with pip:
 
-`$ brew install portaudio`
-`$ pip install pyaudio`
+`brew install portaudio`
+`pip install pyaudio`
 
-3. **Windows**
+**Windows**
 
 On Windows, you can install PyAudio with pip:
 
-`$ pip install pyaudio`
+`pip install pyaudio`
 
 ## Testing the Installation
 Once you’ve got PyAudio installed, you can test the installation from the console.
 
-`$ python -m speech_recognition`
+`python -m speech_recognition`
 
 Make sure your default microphone is on and unmuted. If the installation worked, you should see something like this:
 
