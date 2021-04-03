@@ -5,11 +5,9 @@ The process for installing PyAudio will vary depending on your operating system.
 
 **Debian Linux**
 
-If you’re on Debian-based Linux (like Ubuntu) you can install PyAudio with apt:
-
-`$ sudo apt-get install python-pyaudio python3-pyaudio`
-
-Once installed, you may still need to run pip install pyaudio, especially if you are working in a virtual environment.
+   If you’re on Debian-based Linux (like Ubuntu) you can install PyAudio with apt:
+   `$ sudo apt-get install python-pyaudio python3-pyaudio`
+   Once installed, you may still need to run pip install pyaudio, especially if you are working in a virtual environment.
 
 **macOS**
 
