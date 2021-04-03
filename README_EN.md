@@ -3,7 +3,7 @@
 ## Installing PyAudio
 The process for installing PyAudio will vary depending on your operating system.
 
-**Debian Linux**
+**-----Debian Linux-----**
 
 If you’re on Debian-based Linux (like Ubuntu) you can install PyAudio with apt:
    
@@ -11,14 +11,14 @@ If you’re on Debian-based Linux (like Ubuntu) you can install PyAudio with apt
    
 Once installed, you may still need to run pip install pyaudio, especially if you are working in a virtual environment.
 
-**macOS**
+**-----macOS-----**
 
 For macOS, first you will need to install PortAudio with Homebrew, and then install PyAudio with pip:
 
 `brew install portaudio`
 `pip install pyaudio`
 
-**Windows**
+**-----Windows-----**
 
 On Windows, you can install PyAudio with pip:
 
