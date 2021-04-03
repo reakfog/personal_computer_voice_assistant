@@ -16,7 +16,6 @@ Once installed, you may still need to run pip install pyaudio, especially if you
 For macOS, first you will need to install PortAudio with Homebrew, and then install PyAudio with pip:
 
 `brew install portaudio`
-`pip install pyaudio`
 
 **-----Windows----------**
 
