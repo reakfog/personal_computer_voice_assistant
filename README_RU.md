@@ -1,9 +1,9 @@
 # Ahsoka Voice Assistant
 
-## **Установка PyAudio**
+## Установка PyAudio
 Процесс установки PyAudio будет зависеть от вашей операционной системы.
 
-**-----Debian Linux-----**
+#### Debian Linux
 
 Если вы используете Linux на основе Debian (например, Ubuntu), вы можете установить PyAudio с помощью apt:
 
@@ -11,13 +11,13 @@
 
 После установки вам все равно может потребоваться запуск pip install pyaudio, особенно если вы работаете в виртуальной среде.
 
-**-----macOS------------**
+#### macOS
 
 Для macOS сначала необходимо установить PortAudio с Homebrew, а затем установить PyAudio с помощью pip:
 
 `brew install portaudio`
 
-**-----Windows----------**
+#### Windows
 
 В Windows вы можете установить PyAudio с помощью pip:
 
