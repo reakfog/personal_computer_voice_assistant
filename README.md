@@ -88,3 +88,5 @@ Say something!`
 Из семи методов только recognize_sphinx()работает в автономном режиме с движком CMU Sphinx. Остальные шесть требуют подключения к Интернету.
 
 ## <a name='links'>Полезные ссылки</a>
+- [Python speech recognition](https://realpython.com/python-speech-recognition/)
+- [SpeechRecognition documentation](https://github.com/Uberi/speech_recognition)
