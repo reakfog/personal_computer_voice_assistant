@@ -1,3 +1,5 @@
 ASSISTANT_NAME = 'Ahsoka'
-LANGUAGE = 'ru'
+SEX = 'female'
+SPEECH_LANGUAGE = 'ru'
+RECOGNITION_LANGUAGE = 'ru'
 DEBUG = True

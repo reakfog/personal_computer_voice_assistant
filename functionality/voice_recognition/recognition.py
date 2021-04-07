@@ -22,16 +22,16 @@ def listen_speech_from_mic(recognizer, microphone):
         return mic_error
 
 
-def recognize_speech_from_mic(recognizer, audio):
+def recognize_speech_from_mic(recognizer, speech):
     # check that recognizer argument are appropriate type
     if not isinstance(recognizer, speech_recognition.Recognizer):
         raise TypeError('`recognizer` must be `Recognizer` instance')
     # recognize audio recorded from the microphone
-    if type(audio) == str:
-        return audio
+    if type(speech) == str:
+        return speech
     try:
         print(f'Started recognition...{current_datetime()}')
-        data = recognizer.recognize_google(audio, language='ru')
+        data = recognizer.recognize_google(speech, language='ru')
         print(f'Finish recognition...{current_datetime()}')
         recognized_data = str(data).lower()
         return recognized_data
@@ -42,4 +42,4 @@ def recognize_speech_from_mic(recognizer, audio):
         recognition_error = 'Check your Internet Connection, please'
         return recognition_error
     except Exception:
-        return audio
+        return speech

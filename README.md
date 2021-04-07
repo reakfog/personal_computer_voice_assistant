@@ -29,9 +29,9 @@ Python3, PyAudio
 #### <a name='pyaudio_installation_linux'>Debian Linux</a>
 Если вы используете Linux на основе Debian (например, Ubuntu), вы можете установить PyAudio с помощью apt:
 
-`sudo apt-get install python3-pyaudio portaudio19-dev python-all-dev python3-all-dev flac`
+`sudo apt-get install python3-pyaudio portaudio19-dev python-all-dev python3-all-dev flac libespeak-dev`
 or
-`sudo apt-get install python-pyaudio portaudio19-dev python-all-dev python3-all-dev flac`
+`sudo apt-get install python-pyaudio portaudio19-dev python-all-dev python3-all-dev flac libespeak-dev`
 
 После установки вам все равно может потребоваться запуск pip install pyaudio, особенно если вы работаете в виртуальной среде.
 
