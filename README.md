@@ -1,4 +1,4 @@
-# Ahsoka Voice Assistant
+# Personal computer Voice Assistant
 
 ## Содержание
 1. [Описание проекта](#description)
