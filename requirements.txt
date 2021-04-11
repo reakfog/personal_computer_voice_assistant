@@ -1,6 +1,5 @@
 SpeechRecognition
 pyttsx3
-webbrowser
 pywhatkit
 wikipedia
 pyjokes
