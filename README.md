@@ -27,7 +27,7 @@
 - выполнять поиск определения в Wikipedia
 - и многое другое
 ## <a name='stack'>Стек технологий</a>
-Python3
+Python3, python3-pyaudio, portaudio19-dev, python-all-dev, python3-all-dev, flac, libespeak-dev
 
 ## <a name='requirements'>Технические требования</a>
 Все необходимые пакеты перечислены в [requirements.txt](https://github.com/reakfog/ahsoka_voice_assistant/blob/main/requirements.txt)
@@ -36,13 +36,13 @@ Python3
 - `python -m venv venv` - создание виртуального окружения
 - `source venv/bin/activate` - автивация витуального окружения
 Процесс установки пакетов будет зависеть от вашей операционной системы.
-- <a name='pyaudio_installation_linux'>Debian Linux</a>
+- *<a name='pyaudio_installation_linux'>Debian Linux</a>*
     - `sudo apt-get install python3-pyaudio portaudio19-dev python-all-dev python3-all-dev flac libespeak-dev`
-    > or
+    or
     - `sudo apt-get install python-pyaudio portaudio19-dev python-all-dev python3-all-dev flac libespeak-dev`
-- <a name='pyaudio_installation_macos'>macOS</a>
+- *<a name='pyaudio_installation_macos'>macOS</a>*
     - `brew install portaudio`
-- <a name='pyaudio_installation_windows'>Windows</a>
+- *<a name='pyaudio_installation_windows'>Windows</a>*
     - Если Вы используете Windows не требуется дополнительных действий
 - `pip install -r requirements.txt` - установка python зависимостей
 - `python assistance_bot/app.py` - запуск проекта
