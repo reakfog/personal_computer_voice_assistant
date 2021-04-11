@@ -1,5 +1,10 @@
+VOICE = True
+
 ASSISTANT_NAME = 'Ahsoka'
 SEX = 'female'
-SPEECH_LANGUAGE = 'ru'
-RECOGNITION_LANGUAGE = 'ru'
-DEBUG = True
+ASSISTANT_LANGUAGE = 'ru'
+
+OWNER_NAME = 'John'
+HOME_CITY = 'Moscow'
+NATIVE_LANGUAGE = 'ru'
+TARGET_LANGUAGE = 'en'
