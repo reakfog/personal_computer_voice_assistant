@@ -55,7 +55,9 @@ Python3, python3-pyaudio, portaudio19-dev, python-all-dev, python3-all-dev, flac
 Убедитесь, что ваш микрофон по умолчанию включен и не заглушен. Если установка прошла успешно, вы должны увидеть что-то вроде этого:
 
 `A moment of silence, please...`
+
 `Set minimum energy threshold to 600.4452854381937`
+
 `Say something!`
 
 Попробуйте немного поиграть с этим, говоря в микрофон и посмотрев, насколько хорошо SpeechRecognition расшифровывает вашу речь.
