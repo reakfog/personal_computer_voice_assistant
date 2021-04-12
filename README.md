@@ -6,7 +6,7 @@
 3. [Технические требования](#requirements)
 4. [Установка зависимостей и запуск проекта локально](#pacages_installation_and_lounch)
     - [Debian Linux](#pyaudio_installation_linux)
-    - [Windows](#pyaudio_installation_macos)
+    - [macOS](#pyaudio_installation_macos)
     - [Windows](#pyaudio_installation_windows)
 5. [Тестирование SpeechRecognition](#sr_testing)
 6. [Полезные ссылки](#links)
