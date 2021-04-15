@@ -27,6 +27,7 @@ def execute_command(text):
 
 commands = {
     ('hello', 'hi', 'morning', 'привет'): play_greetings,
-    ('bye', 'goodbye', 'quit', 'exit', 'stop', 'пока'): play_farewell_and_quit,
+    ('bye', 'goodbye', 'quit', 'exit', 'stop', 'пока'): play_goodbye_and_quit,
+    ('search', 'find', 'google', 'найди'): search_for_term_on_google,
     ('Error:'): play_error,
 }
