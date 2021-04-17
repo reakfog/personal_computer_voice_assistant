@@ -1,5 +1,8 @@
 SpeechRecognition~=3.8.1
+google-assistant-sdk~=0.6.0
 pyttsx3~=2.90
-wheel
+wheel~=0.36.2
 PyAudio~=0.2.11
 google~=3.0.0
+termcolor~=1.1.0
+python-daemon~=2.3.0

@@ -1,8 +1,8 @@
-VOICE = True
+VOICE = False
 
 ASSISTANT_NAME = 'Ahsoka'
 SEX = 'female'
-ASSISTANT_LANGUAGE = 'ru'
+ASSISTANT_LANGUAGE = 'en'
 
 OWNER_NAME = 'John'
 HOME_CITY = 'Moscow'

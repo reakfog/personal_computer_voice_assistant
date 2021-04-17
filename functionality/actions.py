@@ -6,7 +6,7 @@ import webbrowser
 from googlesearch import search
 from assistance_bot import core
 from assistance_bot import settings
-from .voice_processing import play_voice_assistant_speech
+from .voice_processing.speaking import play_voice_assistant_speech
 
 
 def play_error(*args: tuple):
@@ -71,5 +71,20 @@ def search_for_term_on_google(*args: tuple):
     print(search_results)
     phrases = [
         f'Here is what I found for {search_term} on google']
+    text = random.choice(phrases)
+    play_voice_assistant_speech(core.ttsEngine, text)
+
+
+def search_for_video_on_youtube(*args: tuple):
+    """
+    YouTube search with automatic link opening
+    :param - *args: search term phrase
+    """
+    if not args[0]: return
+    search_term = ' '.join(args[0])
+    url = 'https://www.youtube.com/results?search_query=' + search_term
+    webbrowser.get().open(url)
+    phrases = [
+        f'Here is what I found for {search_term} on youtube']
     text = random.choice(phrases)
     play_voice_assistant_speech(core.ttsEngine, text)

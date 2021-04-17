@@ -29,5 +29,6 @@ commands = {
     ('hello', 'hi', 'morning', 'привет'): play_greetings,
     ('bye', 'goodbye', 'quit', 'exit', 'stop', 'пока'): play_goodbye_and_quit,
     ('search', 'find', 'google', 'найди'): search_for_term_on_google,
+    ('video', 'youtube', 'watch', 'видео'): search_for_video_on_youtube,
     ('Error:'): play_error,
 }
