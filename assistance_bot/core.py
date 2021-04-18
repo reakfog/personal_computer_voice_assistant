@@ -4,8 +4,7 @@ from . import settings
 
 
 class VoiceAssistant:
-    """
-    Voice assistant settings including name, gender, language of speech
+    """Voice assistant settings including name, gender, language of speech
     """
     name = settings.ASSISTANT_NAME
     sex = settings.SEX
@@ -13,8 +12,7 @@ class VoiceAssistant:
 
 
 class AssistantOwner:
-    """
-    Owner information, including name, city of residence,
+    """Owner information, including name, city of residence,
     native language of speech, target language (for text translations)
     """
     name = settings.OWNER_NAME

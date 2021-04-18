@@ -1,11 +1,8 @@
 from .actions import *
 
 
-def search_command(command_name: str, *args: list):
-    """
-    Searching user-specified command and arguments
-    :param - command_name: command_name
-    :param - *args: command_options
+def search_command(command_name:str, *args: list) -> None:
+    """Searching user-specified command and arguments
     """
     for key in commands.keys():
         if command_name in key:
@@ -14,10 +11,8 @@ def search_command(command_name: str, *args: list):
             pass
 
 
-def execute_command(text):
-    """
-    Executing a user-defined command
-    :param - text: the text we received after listening to the voice
+def execute_command(text:str) -> None:
+    """Executing a user-defined command
     """
     input_text = text.split(' ')
     command_name = input_text[0]

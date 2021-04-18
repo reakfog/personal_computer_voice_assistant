@@ -1,15 +1,15 @@
-import sys  
+import sys
+import pyttsx3  
 sys.path = ['', '..'] + sys.path[1:]
 
 from termcolor import colored
 from assistance_bot import settings, core
 
-def setup_assistant_voice(engine, assistant_obj):
-    """
-    Setting the default voice (the index may vary depending
+def setup_assistant_voice(engine, assistant_obj) -> None:
+    """Setting the default voice (the index may vary depending
     on the settings of the operating system)
     """
-    voices = engine.getProperty("voices")
+    voices = engine.getProperty('voices')
     if assistant_obj == 'en':
         assistant_obj.recognition_language = 'en-US'
         if assistant_obj.sex == 'female':
@@ -24,9 +24,8 @@ def setup_assistant_voice(engine, assistant_obj):
         engine.setProperty('voice', voices[0].id)
 
 
-def play_voice_assistant_speech(engine, text):
-    """
-    Play voice assistant speech answers or return data in text format
+def play_voice_assistant_speech(engine, text:str):
+    """Play voice assistant speech answers or return data in text format
     """
     if settings.VOICE:
         engine.say(text)

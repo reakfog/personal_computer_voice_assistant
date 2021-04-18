@@ -9,15 +9,14 @@ from assistance_bot import settings
 from .voice_processing.speaking import play_voice_assistant_speech
 
 
-def play_error(*args: tuple):
-    """
-    Playing a error
+def play_error(*args: tuple) -> None:
+    """Playing an error
     """
     pass
 
-def play_greetings(*args: tuple):
-    """
-    Playing a random greeting speech
+
+def play_greetings(*args: tuple) -> None:
+    """Playing a random greeting speech
     """
     owner = core.owner.name
     phrases = [
@@ -27,9 +26,8 @@ def play_greetings(*args: tuple):
     play_voice_assistant_speech(core.ttsEngine, text)
 
 
-def play_goodbye_and_quit(*args: tuple):
-    """
-    Play the farewell speech and exit
+def play_goodbye_and_quit(*args: tuple) -> None:
+    """Play the farewell speech and exit
     """
     owner = core.owner.name
     phrases = [
@@ -40,10 +38,9 @@ def play_goodbye_and_quit(*args: tuple):
     core.ttsEngine.stop()
     quit()
 
-def search_for_term_on_google(*args: tuple):
-    """
-    Google search with automatic link opening
-    :param - *args: search term phrase
+
+def search_for_term_on_google(*args: tuple) -> None:
+    """Google search with automatic link opening
     """
     if not args[0]: return
     search_term = " ".join(args[0])
@@ -75,10 +72,8 @@ def search_for_term_on_google(*args: tuple):
     play_voice_assistant_speech(core.ttsEngine, text)
 
 
-def search_for_video_on_youtube(*args: tuple):
-    """
-    YouTube search with automatic link opening
-    :param - *args: search term phrase
+def search_for_video_on_youtube(*args: tuple) -> None:
+    """YouTube search with automatic link opening
     """
     if not args[0]: return
     search_term = ' '.join(args[0])

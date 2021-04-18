@@ -1,6 +1,4 @@
 import sys
-
-import assistance_bot  
 sys.path = ['', '..'] + sys.path[1:]
 
 import speech_recognition
@@ -8,10 +6,22 @@ from termcolor import colored
 from assistance_bot import core
 
 
-def listen_speech_from_mic(recognizer, microphone) -> speech_recognition.AudioData:
-    """
-    Adjust the recognizer sensitivity to ambient noise and record audio
+def listen_speech_from_mic(
+    recognizer:speech_recognition.Recognizer,
+    microphone:speech_recognition.Microphone) -> speech_recognition.AudioData:
+    """Adjust the recognizer sensitivity to ambient noise and record audio
     from the microphone
+
+    Args:
+        recognizer (speech_recognition.Recognizer): recognizer instance
+        microphone (speech_recognition.Microphone): microphone instance
+
+    Raises:
+        TypeError: `recognizer` must be `Recognizer` instance
+        TypeError: `microphone` must be `Microphone` instance
+
+    Returns:
+        speech_recognition.AudioData: audio data
     """
     # check that recognizer and microphone arguments are appropriate type
     if not isinstance(recognizer, speech_recognition.Recognizer):
@@ -32,9 +42,20 @@ def listen_speech_from_mic(recognizer, microphone) -> speech_recognition.AudioDa
         return audio
 
 
-def recognize_speech_from_audio(recognizer, audio) -> str:
-    """
-    Recognize audio recorded from the microphone
+def recognize_speech_from_audio(
+    recognizer:speech_recognition.Recognizer,
+    audio:speech_recognition.AudioData) -> str:
+    """Recognize audio recorded from the microphone
+
+    Args:
+        recognizer (speech_recognition.Recognizer): recognizer instance
+        audio (speech_recognition.AudioData): audio data
+
+    Raises:
+        TypeError: `recognizer` must be `Recognizer` instance
+
+    Returns:
+        str: recognized text
     """
     # check that recognizer argument are appropriate type
     if not isinstance(recognizer, speech_recognition.Recognizer):
@@ -50,7 +71,18 @@ def recognize_speech_from_audio(recognizer, audio) -> str:
     return recognized_data
 
 
-def get_listen_and_recognize_result(recognizer, microphone) -> str:
+def get_listen_and_recognize_result(
+    recognizer:speech_recognition.Recognizer,
+    microphone:speech_recognition.Microphone) -> str:
+    """Return recognized text or listening/recognition exceptions
+
+    Args:
+        recognizer (speech_recognition.Recognizer): recognizer instance
+        microphone (speech_recognition.Microphone): microphone instance
+
+    Returns:
+        str: recognized text or exception
+    """
     assistant = core.assistant.name
     owner = core.owner.name
     error_indicator = 'Error:'
