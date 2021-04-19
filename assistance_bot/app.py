@@ -10,7 +10,7 @@ if __name__ == '__main__':
     speaking.setup_assistant_voice(core.ttsEngine, core.assistant)
     while True:
         # start speech recording and speech recognition
-        recognized_speech = listening.get_listen_and_recognize_result(
+        recognized_speech = listening.get_listening_and_recognition_result(
             core.recognizer,
             core.microphone)
         # executing the given command

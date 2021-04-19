@@ -4,6 +4,7 @@ sys.path = ['', '..'] + sys.path[1:]
 import speech_recognition
 from termcolor import colored
 from assistance_bot import core
+from .. import utils
 
 
 def listen_speech_from_mic(
@@ -71,7 +72,7 @@ def recognize_speech_from_audio(
     return recognized_data
 
 
-def get_listen_and_recognize_result(
+def get_listening_and_recognition_result(
     recognizer:speech_recognition.Recognizer,
     microphone:speech_recognition.Microphone) -> str:
     """Return recognized text or listening/recognition exceptions
@@ -83,24 +84,22 @@ def get_listen_and_recognize_result(
     Returns:
         str: recognized text or exception
     """
-    assistant = core.assistant.name
-    owner = core.owner.name
     error_indicator = 'Error:'
     try:
         audio = listen_speech_from_mic(recognizer, microphone)
     except speech_recognition.WaitTimeoutError:
         error = 'Can you check if your microphone is on, please?'
-        text = ''.join([assistant, ': ', colored(error, 'yellow')])
+        text = utils.print_assistant_speech(text=error, error=True)
         print(text)
         return ''.join([error_indicator, error])
     try:
         speech = recognize_speech_from_audio(recognizer, audio=audio)
-        text = ''.join([owner, ': ', colored(speech.capitalize(), 'green')])
+        text = utils.print_owner_speech(text=speech)
         print(text)
         return speech
     except speech_recognition.RequestError:
         error = 'I could not request results from service'
-        text = ''.join([assistant, ': ', colored(error, 'red')])
+        text = utils.print_assistant_speech(text=error, error=True)
         print(text)
         return ''.join([error_indicator, error])
     except speech_recognition.UnknownValueError:

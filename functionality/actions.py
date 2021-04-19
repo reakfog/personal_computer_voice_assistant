@@ -3,10 +3,12 @@ sys.path = ['', '..'] + sys.path[1:]
 
 import random
 import webbrowser
+import time
 from googlesearch import search
 from assistance_bot import core
 from assistance_bot import settings
 from .voice_processing.speaking import play_voice_assistant_speech
+from . import utils
 
 
 def play_error(*args: tuple) -> None:
@@ -65,7 +67,7 @@ def search_for_term_on_google(*args: tuple) -> None:
         text = random.choice(phrases)
         play_voice_assistant_speech(core.ttsEngine, text)
         return
-    print(search_results)
+    print(utils.print_assistant_speech(text=search_results[0]))
     phrases = [
         f'Here is what I found for {search_term} on google']
     text = random.choice(phrases)
@@ -83,3 +85,7 @@ def search_for_video_on_youtube(*args: tuple) -> None:
         f'Here is what I found for {search_term} on youtube']
     text = random.choice(phrases)
     play_voice_assistant_speech(core.ttsEngine, text)
+
+
+def timer(*args: tuple) -> None:
+    pass

@@ -4,6 +4,7 @@ sys.path = ['', '..'] + sys.path[1:]
 
 from termcolor import colored
 from assistance_bot import settings, core
+from .. import utils
 
 def setup_assistant_voice(engine, assistant_obj) -> None:
     """Setting the default voice (the index may vary depending
@@ -30,4 +31,4 @@ def play_voice_assistant_speech(engine, text:str):
     if settings.VOICE:
         engine.say(text)
         engine.runAndWait()
-    print(core.assistant.name, ': ', colored(text, 'yellow'))
+    print(utils.print_assistant_speech(text=text))
